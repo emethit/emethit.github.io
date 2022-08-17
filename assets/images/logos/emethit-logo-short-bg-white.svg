@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="workspace"
+   version="1.1"
+   sodipodi:docname="emethit-logo-short-bg-white.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   width="34.395832mm"
+   height="41.275002mm"
+   inkscape:export-filename="/Users/fsoedjede/Projects/emethit/emethit-logo-short-bg-white.png"
+   inkscape:export-xdpi="959.48291"
+   inkscape:export-ydpi="959.48291">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#575757"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1399"
+     inkscape:window-height="1026"
+     id="namedview484"
+     showgrid="false"
+     inkscape:zoom="2.79"
+     inkscape:cx="13.716632"
+     inkscape:cy="41.318005"
+     inkscape:window-x="443"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="workspace"
+     inkscape:document-rotation="0"
+     units="mm"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-text-baseline="false"
+     inkscape:pagecheckerboard="true" />
+  <defs
+     id="defs270" />
+  <g
+     class="svg-text svg-visible"
+     transform="matrix(1.247,0,0,1.247,297.53273,192.6125)"
+     style="opacity:1"
+     id="logo1-text">
+    <path
+       fill="none"
+       d="m -222.94922,105.68359 c 202.94922,-1 242.94922,-1 445.89844,0"
+       id="path396" />
+    <rect
+       x="0"
+       y="0"
+       width="0"
+       height="0"
+       id="rect400" />
+  </g>
+  <g
+     id="g414"
+     transform="translate(-10.217267,-252.8875)">
+    <rect
+       x="0"
+       y="0"
+       width="0"
+       height="0"
+       fill="rgba(255,136,0,0.1)"
+       stroke="#ff8800"
+       style="stroke-width:1"
+       id="rect412" />
+  </g>
+  <metadata
+     id="metadata934">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title />
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     style="fill:#ffffff;stroke-width:3.66166"
+     id="rect29"
+     width="130"
+     height="156"
+     x="0"
+     y="0" />
+  <g
+     id="g919-4"
+     transform="translate(-3.1448875,-494.37873)"
+     style="opacity:1">
+    <g
+       class="svg-clip svg-visible"
+       transform="matrix(2.0735359,0,0,2.0871598,-29.893938,446.58998)"
+       style="opacity:1"
+       id="logo1-icon-0-0">
+      <path
+         d="m 54.666,49.756 c -7.186,0 -13.032,5.846 -13.032,13.032 0,7.186 5.847,13.031 13.032,13.031 7.185,0 13.031,-5.846 13.031,-13.031 0,-7.185 -5.845,-13.032 -13.031,-13.032 z m 0,23.063 c -5.532,0 -10.032,-4.5 -10.032,-10.031 0,-5.532 4.5,-10.032 10.032,-10.032 5.531,0 10.031,4.5 10.031,10.032 0,5.531 -4.5,10.031 -10.031,10.031 z"
+         stroke="none"
+         id="logo1-icon-1-8-1"
+         style="fill:#0e9af1" />
+      <path
+         d="m 34.375,30.514 c -3.786,0 -6.867,3.081 -6.867,6.867 0,3.786 3.081,6.867 6.867,6.867 3.786,0 6.866,-3.081 6.866,-6.867 0,-3.786 -3.08,-6.867 -6.866,-6.867 z m 0,10.734 c -2.133,0 -3.867,-1.734 -3.867,-3.867 0,-2.133 1.734,-3.867 3.867,-3.867 2.132,0 3.866,1.734 3.866,3.867 0,2.133 -1.734,3.867 -3.866,3.867 z"
+         stroke="none"
+         id="logo1-icon-2-2-5"
+         style="fill:#0e9af1" />
+      <circle
+         cx="33.587002"
+         cy="61.151001"
+         r="5.3670001"
+         stroke="none"
+         id="logo1-icon-3-0-1"
+         style="fill:#0e9af1" />
+      <circle
+         cx="42.150002"
+         cy="46.040001"
+         r="2.4089999"
+         stroke="none"
+         id="logo1-icon-6-6-1"
+         style="fill:#0e9af1" />
+      <circle
+         cx="50.465"
+         cy="31.021"
+         r="3.1140001"
+         stroke="none"
+         id="logo1-icon-5-0-1"
+         style="fill:#0e9af1" />
+      <circle
+         cx="62.991375"
+         cy="38.636818"
+         r="4.4970002"
+         stroke="none"
+         id="logo1-icon-4-7-5"
+         style="fill:#0e9af1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1.25;font-family:'Apple Braille';-inkscape-font-specification:'Apple Braille';letter-spacing:0px;word-spacing:0px"
+       x="15.976919"
+       y="635.32349"
+       id="text811-2-1"><tspan
+         sodipodi:role="line"
+         id="tspan809-9-7"
+         x="15.976919"
+         y="635.32349"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:24px;font-family:Futura;-inkscape-font-specification:'Futura Medium';fill:#3a3a3a;fill-opacity:1">EMETH IT</tspan></text>
+  </g>
+</svg>

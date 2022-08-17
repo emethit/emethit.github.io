@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title itemprop='name'>EMETHIT · Digital Agency | Business Development | Web Development | Mobile Development</title>
+    <link rel="icon" href="assets/images/logos/emethit-logo-short.svg">
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeth: '#0e9af1',
+                        emethdark: '#045A8F',
+                        redline: '#E12121',
+                    }
+                }
+            }
+        }
+        //https://www.investopedia.com/articles/personal-finance/090815/basics-business-development.asp
+    </script>
+</head>
+<body class="text-justify text-gray-600">
+<!-- @see: https://tailwindui.com/components/marketing/elements/headers -->
+<header class="relative bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex justify-between items-center border-b-2 border-gray-100 py-3 md:justify-start md:space-x-10">
+            <div class="flex justify-start md:w-0 md:flex-1">
+                <a href="#">
+                    <span class="sr-only">EMETHIT</span>
+                    <img class="h-8 w-auto sm:h-10" src="assets/images/logos/emethit-logo.svg" alt="EMETHIT">
+                </a>
+            </div>
+            <div class="-mr-2 -my-2 md:hidden">
+                <button type="button"
+                        id="open-menu"
+                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                    <span class="sr-only">Open menu</span>
+                    <!-- Heroicon name: outline/menu -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <nav class="hidden md:flex space-x-10">
+                <a href="#" class="text-base font-medium border-b-2 border-transparent hover:text-gray-900 hover:border-blue-500 transition-colors duration-200 transform">
+                    Activités IT
+                </a>
+                <a href="#" class="text-base font-medium border-b-2 border-transparent hover:text-gray-900 hover:border-blue-500 transition-colors duration-200 transform">
+                    Business Development
+                </a>
+                <a href="#" class="text-base font-medium border-b-2 border-transparent hover:text-gray-900 hover:border-blue-500 transition-colors duration-200 transform">
+                    Contactez-nous
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!--
+      Mobile menu, show/hide based on mobile menu state.
+
+      Entering: "duration-200 ease-out"
+        From: "opacity-0 scale-95"
+        To: "opacity-100 scale-100"
+      Leaving: "duration-100 ease-in"
+        From: "opacity-100 scale-100"
+        To: "opacity-0 scale-95"
+    -->
+    <div id="mobile-menu" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+            <div class="pt-5 pb-6 px-5">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <img class="h-8 w-auto" src="assets/images/logos/emethit-logo.svg" alt="EMETHIT">
+                    </div>
+                    <div class="-mr-2">
+                        <button type="button" id="close-menu"
+                                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                            <span class="sr-only">Close menu</span>
+                            <!-- Heroicon name: outline/x -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <nav class="grid gap-y-8">
+                        <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <span class="ml-3 text-base font-medium text-gray-900">
+                                Activités IT
+                            </span>
+                        </a>
+                        <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <span class="ml-3 text-base font-medium text-gray-900">
+                                Business Development
+                            </span>
+                        </a>
+                        <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <span class="ml-3 text-base font-medium text-gray-900">
+                                Contactez-nous
+                            </span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    https://unsplash.com/photos/Q1p7bh3SHj8
+    https://unsplash.com/photos/c9OCWLka764
+    https://unsplash.com/photos/eodA_8CTOFo
+    -->
+    <div class="bg-local bg-origin-padding bg-no-repeat bg-cover bg-center bg-gradient-to-r from-indigo-500 to-blue-500 pt-48 pb-10"
+         style="background-image: url(assets/images/unsplash-jackson-hendry-eodA_8CTOFo-1920x1282.jpg);">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 mb-10 md:mb-20" style="z-index: -2">
+            <div class="flex justify-between">
+                <div class="w-full text-center">
+                    <h2 class="text-4xl font-bold leading-normal text-white mb-10">
+                        Construisons ensemble notre avenir
+                    </h2>
+                    <h3 class="font-bold leading-snug text-white italic">
+                        Faites-nous confiance pour votre stratégie d'entreprise et vos projets informatiques
+                        <br class="hidden lg:block"> et ensemble vivons une belle aventure !
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <!--<div id="particles-header" class="absolute top-0 bottom-0 w-full h-full"></div>-->
+    </div>
+</header>
+
+<section class="relative bg-white py-10 lg:py-16">
+    <div class="container max-w-7xl mx-auto px-4 sm:px-6 flex flex-col lg:flex-row lg:items-center">
+        <div class="w-full lg:w-1/2">
+            <div class="lg:max-w-lg">
+                <h2 class="text-2xl font-medium text-emeth tracking-wide lg:text-4xl">À propos</h2>
+                <div class="mt-2">
+                    <p class="mb-2">La grande majorité des PME manquent de temps pour effectuer une prospection commerciale BtoB efficace et former</p>
+                    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a iaculis purus, eget accumsan arcu. Donec lacinia velit at
+                        ipsum varius, eu eleifend leo blandit. Nullam sit amet fringilla enim. Phasellus tincidunt dapibus orci.</p>
+                    <p>Nulla suscipit efficitur ligula, nec maximus odio blandit eget. Pellentesque ut velit interdum, facilisis eros non, dapibus
+                        sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center mt-10 w-full h-96 lg:w-1/2 lg:mt-0">
+            <img class="object-cover w-full h-full rounded-md" src="https://images.unsplash.com/photo-1555181126-cf46a03827c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="glasses photo">
+        </div>
+    </div>
+</section>
+
+<div class="relative mx-auto bg-redline w-[10rem] h-[0.25rem] top-[-0.125rem]"></div>
+
+<section class="relative bg-blue-50 py-10 lg:py-16">
+    <div class="container max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-wrap">
+            <div class="w-full">
+                <div class="text-left mx-auto mb-10">
+                    <h2 class="font-bold text-3xl tracking-wide text-emethdark sm:text-4xl md:text-[40px] text-dark mb-4">
+                        Qui sommes-nous&nbsp;?
+                    </h2>
+                    <h3 class="font-semibold text-2xl tracking-wide">
+                        EMETH-IT accompagne ses clients dans leur <span class="text-blue-400">développement</span>.
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-1/2">
+                <div class="lg:max-w-lg">
+                    <p class="mb-2">
+                        La société a été créée en 2020 par 3 ingénieurs (2 informaticiens et un commercial) avec pour mission d'aider les entreprises dans l'accélération de leur
+                        transformation digitale dans le contexte de la crise Covid.
+                    </p>
+                    <p class="mb-2">
+                        De nombreuses ESN et start-up ne possèdent pas des équipes professionnelles suffisantes pour conquérir le vaste marché de
+                        l'IT et du numérique.
+                    </p>
+                    <p class="mb-2">
+                        Nous agissons aux côtés des entreprises et des collectivités en quête de nouveaux marchés, français et internationaux.
+                    </p>
+                    <p class="mb-2">
+                        EMETH IT répond à ce besoin spécifique : elle met à leur disposition des ingénieurs (Informatiques, commerciaux et RH),
+                        spécialistes des solutions et services du numérique.
+                    </p>
+                </div>
+            </div>
+            <div class="justify-center w-full mt-10 lg:w-1/2 lg:mt-0">
+                <h4 class="font-semibold text-emethdark mb-2 uppercase">Nos solutions</h4>
+                <div class="ml-4">
+                    <ul class="list-disc">
+                        <li>
+                            Mise à disposition de consultants en informatique en renfort d'activité sur des missions courtes (Développement Web, Application mobile, Devops/Cloud, Big&nbsp;Data, ...)
+                        </li>
+                        <li>
+                            Mise à disposition des forces de ventes (Commerciaux, Business Developer, Customers success management, assistant commercial, ...)
+                        </li>
+                        <li>
+                            Chargé de recrutement et Assistant RH, chasseurs IT...
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="relative mx-auto bg-redline w-[10rem] h-[0.25rem] top-[-0.125rem]"></div>
+
+<section class="relative bg-white py-10 lg:py-16">
+    <div class="container max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-wrap">
+            <div class="w-full">
+                <div class="text-left mx-auto mb-10">
+                    <h2 class="font-bold text-3xl tracking-wide text-emeth sm:text-4xl md:text-[40px] text-dark mb-4">
+                        Que faisons-nous&nbsp;?
+                    </h2>
+                    <h3 class="font-semibold text-2xl tracking-wide">
+                        Nos solutions pour vos différents besoins et objectif.
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-1/2">
+                <h4 class="font-semibold text-xl text-emethdark mb-2">Business Development</h4>
+                <div class="lg:max-w-lg">
+                    <h5 class="font-semibold text-emethdark">Booster le démarrage de votre entreprise</h5>
+                    <p class="mb-2">
+                        Nous optimisons votre business plan, votre plan d’actions commercial et marketing et nous trouvons vos premiers clients.
+                    </p>
+
+                    <h5 class="font-semibold text-emethdark">Optimiser vos couts commerciaux</h5>
+                    <p class="mb-2">
+                        Optez pour une force de vente clef en main. Nos experts commerciaux vous préparent le terrain.
+                    </p>
+
+                    <h5 class="font-semibold text-emethdark">Accélérer votre développement</h5>
+                    <p class="mb-2">
+                        Vous allez pouvoir lancer rapidement une opération de vente musclée, sans avoir à passer par un recrutement, pour générer rapidement des ventes et gagner des parts de marché.
+                    </p>
+                </div>
+            </div>
+            <div class="justify-center w-full mt-10 lg:w-1/2 lg:mt-0">
+                <h4 class="font-semibold text-xl text-emethdark mb-2">Activités IT</h4>
+                <div class="lg:max-w-lg">
+                    <h5 class="font-semibold text-emethdark">Développement Web</h5>
+                    <p class="mb-2">
+                        Nous optimisons votre business plan, votre plan d’actions commercial et marketing et nous trouvons vos premiers clients.
+                    </p>
+
+                    <h5 class="font-semibold text-emethdark">Développement mobile</h5>
+                    <p class="mb-2">
+                        Optez pour une force de vente clef en main. Nos experts commerciaux vous préparent le terrain.
+                    </p>
+
+                    <h5 class="font-semibold text-emethdark">Accélérer votre développement</h5>
+                    <p class="mb-2">
+                        Vous allez pouvoir lancer rapidement une opération de vente musclée, sans avoir à passer par un recrutement, pour générer rapidement des ventes et gagner des parts de marché.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="relative mx-auto bg-redline w-[10rem] h-[0.25rem] top-[-0.125rem]"></div>
+
+<footer class="relative bg-blue-50 py-10 lg:py-16 py-16">
+    <div class="container max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-wrap">
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                <div class="mx-3 mb-8">
+                    <div class="footer-logo mb-3">
+                        <img src="assets/images/logos/emethit-logo.svg" alt="EMETHIT LOGO">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam excepturi quasi, ipsam voluptatem.</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4"></div>
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4"></div>
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                <div class="mx-3 mb-8">
+                    <h3 class="font-bold text-xl mb-5">Nous contacter</h3>
+                    <ul class="contact">
+                        <li>+33 6 65 46 56 54</li>
+                        <li>contact[at]gmail.com</li>
+                        <li>www.emethit.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="relative bg-neutral-900 py-10 py-2 bg-border-t border-gray-200">
+    <div class="container max-w-7xl mx-auto px-4 sm:px-6 text-center text-white">
+        <p>Copyright @2022 · Tous droits réservés.</p>
+    </div>
+</div><!-- footer copyright -->
+
+<!--====== Particles js ======-->
+<script src="assets/js/particles.min.js"></script>
+<script src="assets/js/main-particles.js"></script>
+<script>
+    const buttonOpenMenu = document.querySelector("button#open-menu");
+    const buttonCloseMenu = document.querySelector("button#close-menu");
+    buttonOpenMenu.addEventListener('click', () => {
+        document.querySelector("div#mobile-menu").style.display = 'block';
+    });
+    buttonCloseMenu.addEventListener('click', () => {
+        document.querySelector("div#mobile-menu").style.display = 'none';
+    });
+</script>
+</body>
+</html>
