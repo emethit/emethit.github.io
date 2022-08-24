@@ -6,10 +6,11 @@
     "tailwindcss": "^3.1.8"
   },
   "scripts": {
-    "tailwindcss:build": "tailwindcss build -i ./src/css/main.css -o ./public/css/tailwind.css",
-    "tailwindcss:watch": "tailwindcss build -i ./src/css/main.css -o ./public/css/tailwind.css --watch",
+    "tailwindcss:build": "tailwindcss build -i ./src/css/main.scss -o ./public/css/main.css",
+    "tailwindcss:watch": "tailwindcss build -i ./src/css/main.scss -o ./public/css/main.css --watch",
+    "tailwindcss:build-prod": "tailwindcss build -i ./src/css/main.scss -o ./public/css/main.css --minify",
     "dev": "NODE_ENV=development npm run tailwindcss:build",
     "watch": "NODE_ENV=development npm run tailwindcss:watch",
-    "prod": "NODE_ENV=production npm run tailwindcss:build"
+    "prod": "NODE_ENV=production npm run tailwindcss:build-prod"
   }
 }

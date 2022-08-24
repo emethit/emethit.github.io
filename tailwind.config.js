@@ -5,7 +5,13 @@ module.exports = {
         './src/**/*.{html,js}',
     ],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                emeth: '#0e9af1',
+                emethdark: '#045A8F',
+                redline: '#E12121',
+            }
+        }
     },
     plugins: [
         'tailwindcss',
