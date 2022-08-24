@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  },
+  "scripts": {
+    "tailwindcss:build": "tailwindcss build -i ./src/css/main.css -o ./public/css/tailwind.css",
+    "tailwindcss:watch": "tailwindcss build -i ./src/css/main.css -o ./public/css/tailwind.css --watch",
+    "dev": "NODE_ENV=development npm run tailwindcss:build",
+    "watch": "NODE_ENV=development npm run tailwindcss:watch",
+    "prod": "NODE_ENV=production npm run tailwindcss:build"
+  }
+}
